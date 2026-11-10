@@ -1,0 +1,10 @@
+<section class="wrap">
+  <div class="eyebrow">Services</div>
+  <h1>Everything you need to ship AI</h1>
+  <p class="lead">Nine focused capabilities, one accountable team, from first prototype to production at scale.</p>
+  <div class="grid">
+    @for (s of services; track s.title) {
+      <div class="card"><h3>{{ s.title }}</h3><p>{{ s.text }}</p></div>
+    }
+  </div>
+</section>

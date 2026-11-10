@@ -1,0 +1,18 @@
+<header class="nav">
+  <a class="logo" routerLink="/">LogiMonk</a>
+  <nav>
+    @for (l of links; track l.path) {
+      <a [routerLink]="l.path" routerLinkActive="on">{{ l.label }}</a>
+    }
+  </nav>
+  <a class="cta" routerLink="/contact">Talk to an expert</a>
+</header>
+
+<main>
+  <router-outlet />
+</main>
+
+<footer class="foot">
+  <span>© {{ year }} LogiMonk Technologies</span>
+  <span>AI-powered software for growing businesses</span>
+</footer>
